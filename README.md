@@ -1,6 +1,6 @@
 # Hi there, I'm Christopher Maher 👋
 
-**Founder & CEO** at [Defilan Technologies](https://defilan.com) 🚀
+**Founder & Principal Engineer** at [Defilan Technologies](https://defilan.com) 🚀
 
 Building production-grade infrastructure for local AI deployment.
 
@@ -69,12 +69,6 @@ We're building the infrastructure for the next generation of AI deployment. Too 
 - Distributed systems
 - Security & compliance
 - DevOps & SRE
-
----
-
-## 📊 GitHub Stats
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=defilantech&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=1F6FEB&text_color=C9D1D9)
 
 ---
 
