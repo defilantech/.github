@@ -2,7 +2,7 @@
 
 **Founder & Principal Engineer** at [Defilan Technologies](https://defilan.com) 🚀
 
-Building production-grade infrastructure for local AI deployment.
+Building production-grade infrastructure for local AI deployments.
 
 ---
 
