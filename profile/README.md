@@ -1,83 +1,48 @@
-# Hi there, I'm Christopher Maher 👋
+# Defilan Technologies
 
-**Founder & Principal Engineer** at [Defilan Technologies](https://defilan.com) 🚀
+**Open-source AI infrastructure for teams that need to own their stack.**
 
-Building production-grade infrastructure for local AI deployments.
+We're a software company in Washington State building tools that make self-hosted LLM deployment practical on Kubernetes. Our work is open source, Apache 2.0 licensed, and designed for production use.
 
 ---
 
-## 🎯 What I'm Working On
+## Our Projects
 
-### [LLMKube](https://github.com/defilantech/llmkube) - Kubernetes for Local LLMs
+### [LLMKube](https://github.com/defilantech/llmkube) — Kubernetes Operator for LLM Inference
 
-Open-source Kubernetes operator that brings production-grade orchestration to local LLM deployments. Perfect for air-gapped, edge, and hybrid environments.
+A Kubernetes operator that turns LLM deployment into a two-line YAML problem. Define a Model and an InferenceService, and the operator handles the rest — downloading, caching, GPU scheduling, health checks, and exposing an OpenAI-compatible API.
 
-```yaml
-apiVersion: inference.llmkube.dev/v1alpha1
-kind: Model
-metadata:
-  name: phi-3-mini
-spec:
-  source: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf/...
-  hardware:
-    accelerator: cuda
+```bash
+llmkube deploy llama-3.1-8b --gpu
 ```
 
-**Why LLMKube?**
-- 🔒 **Air-Gap Ready** - Deploy AI in classified, HIPAA, or disconnected environments
-- ☸️ **Kubernetes Native** - Familiar tools, production-grade reliability
-- 🎯 **SLO Enforcement** - Automatic scaling and failover to meet latency targets
-- 🔌 **OpenAI Compatible** - Drop-in replacement for existing applications
-- 📊 **Built-in Observability** - Prometheus metrics, OpenTelemetry tracing
+**What makes it different:**
+
+- **Heterogeneous GPU support** — NVIDIA CUDA and Apple Silicon Metal in the same cluster, managed by the same CRDs. The [Metal Agent](https://github.com/defilantech/llmkube/tree/main/deployment/macos) runs inference natively on macOS while Kubernetes handles orchestration.
+- **OpenAI-compatible API** — Drop-in replacement for OpenAI endpoints. Works with LangChain, LlamaIndex, and any OpenAI SDK.
+- **Full observability** — Prometheus metrics, OpenTelemetry tracing, and Grafana dashboards included.
+- **Air-gap ready** — Built for environments where cloud APIs aren't an option.
 
 ---
 
-## 🏢 About Defilan Technologies
+## How We Work
 
-We're building the infrastructure for the next generation of AI deployment. Too many organizations in defense, healthcare, manufacturing, and finance are locked out of the AI revolution because existing solutions require constant cloud connectivity.
+Everything we build is open source first. We believe the best infrastructure software gets built in the open, with input from the people who actually use it.
 
-**Our Mission:** Make production-grade AI infrastructure accessible to organizations regardless of connectivity constraints or regulatory environment.
+We welcome contributions at every level — from filing issues and improving docs to adding new features. If you're interested in Kubernetes, GPU orchestration, or LLM infrastructure, we'd love to work with you.
 
-**Core Values:**
-- 🔓 **Open by Default** - Apache 2.0 licensed, community-driven development
-- 🎯 **Production First** - Every feature designed for real-world deployments
-- 🛡️ **Security Conscious** - TEE support, audit logging, PII detection built-in
-- 🤝 **Community Driven** - Built by the people who use it
+- **Issues & features:** [GitHub Issues](https://github.com/defilantech/llmkube/issues)
+- **Questions & ideas:** [GitHub Discussions](https://github.com/defilantech/llmkube/discussions)
+- **Contributing:** [CONTRIBUTING.md](https://github.com/defilantech/llmkube/blob/main/CONTRIBUTING.md)
 
 ---
 
-## 📫 Get In Touch
+## Get in Touch
 
-- 🌐 **Website:** [defilan.com](https://defilan.com)
-- 💼 **Company:** [Defilan Technologies LLC](https://defilan.com)
-- 📍 **Location:** Gig Harbor, WA
-- 💬 **Community:** [GitHub Discussions](https://github.com/defilantech/llmkube/discussions)
-
----
-
-## 🔧 Tech Stack
-
-**Current Focus:**
-- Kubernetes Operators & CRDs
-- Go (operator development)
-- Local LLM inference (llama.cpp, vLLM, TGI)
-- eBPF observability
-- GPU acceleration (CUDA, Metal)
-
-**Previous Experience:**
-- Cloud-native infrastructure
-- Distributed systems
-- Security & compliance
-- DevOps & SRE
-
----
+- **Website:** [defilan.com](https://defilan.com)
+- **GitHub:** [github.com/defilantech](https://github.com/defilantech)
+- **Location:** Washington State
 
 <p align="center">
-  <i>Building the future of AI infrastructure, one commit at a time.</i>
-</p>
-
-<p align="center">
-  <a href="https://github.com/defilantech/llmkube">⭐ Star LLMKube</a> •
-  <a href="https://defilan.com">🌐 Visit Defilan.com</a> •
-  <a href="https://github.com/defilantech/llmkube/discussions">💬 Join Community</a>
+  <a href="https://github.com/defilantech/llmkube">Star LLMKube on GitHub</a> · <a href="https://github.com/defilantech/llmkube/discussions">Join the Discussion</a>
 </p>
